@@ -1,4 +1,4 @@
-<a href="https://webplugin.tk"><img src=https://webplugin.tk/cdn/banner.png width="50%"></a>
+<a href="https://webplugin.tk"><img src=https://webplugin.tk/cdn/banner.png width="70%"></a>
 # WebPlug
 ## Create a website easily in php
 ### [www.webplugin.tk](https://webplugin.tk)
