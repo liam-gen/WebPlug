@@ -5,7 +5,7 @@
 
 ---
 
-[![version](http://webplugin.tk/cdn/v/0.0.3.svg)](http://webplugin.tk/changelogs/v0.0.3) &emsp; [![language](http://webplugin.tk/cdn/badges/language-php.svg)](http://php.net) &emsp; [![open source](http://webplugin.tk/cdn/badges/open-source.svg)](http://webplugin.tk)  &emsp; [![try now](http://webplugin.tk/cdn/badges/try-now.svg)](http://webplugin.tk/getstarted)
+[![version](http://webplugin.tk/cdn/v/0.0.4.svg)](http://webplugin.tk/changelogs/v0.0.4) &emsp; [![language](http://webplugin.tk/cdn/badges/language-php.svg)](http://php.net) &emsp; [![open source](http://webplugin.tk/cdn/badges/open-source.svg)](http://webplugin.tk)  &emsp; [![try now](http://webplugin.tk/cdn/badges/try-now.svg)](http://webplugin.tk/getstarted)
 
 # About
 
@@ -30,7 +30,7 @@ Create and set up the site
 `website.php`
 ```php
 <?php
-include("WebPlug.php");
+include("webplug-v0.0.4/WebPlug.php");
 
 $d = __DIR__.DIRECTORY_SEPARATOR;
 
