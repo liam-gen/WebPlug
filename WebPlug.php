@@ -13,7 +13,8 @@ class WebPlug
 {
     public function __construct($params=array())
     {
-        $this->params = $params; 
+        $this->params = $params;
+        $this->infos = array("VERSION" => "0.0.4", "AUTHOR" => "liamgen.js#1315", "WEBSITE" => "www.webplugin.tk");
         if(empty($params["settings"]["debug"]) or $params["settings"]["debug"] != false)
         {
             $this->debug();
