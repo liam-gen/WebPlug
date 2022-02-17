@@ -31,7 +31,7 @@ class WebPlug
 
     protected function makeHtacces($params=array())
     {
-        $htaccess = "RewriteRule ^".$params["link"]." ".$params["file"];
+        $htaccess = "RewriteRule ^".$params["link"]."$ ".$params["file"];
         if(!$this->isWrited(".htaccess", $htaccess)[0])
         {
             $file = fopen(".htaccess", "a+");
