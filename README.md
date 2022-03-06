@@ -1,5 +1,5 @@
 <a href="https://webplugin.tk"><img src="https://webplugin.tk/cdn/banner.png"></a>
-# WebPlug
+# WebPlugin
 ## Create a website easily in php
 ### [www.webplugin.tk](https://webplugin.tk)
 
