@@ -1,8 +1,3 @@
 <?php
-include("website.php"); 
-// Load the page with id
-$p->load(0);
-
-// Write the page name
-$p->write("{page.name}");
-?>
+require_once("website.php");
+PAGE->write("{page.name}");
