@@ -1,87 +1,93 @@
 <a href="https://webplugin.tk"><img src="https://webplugin.tk/cdn/banner.png"></a>
-# WebPlugin
-## Create a website easily in php
-### [www.webplugin.tk](https://webplugin.tk)
+# <img src="https://webplugin.tk/cdn/logo.png" width="7%" style="vertical-align: middle;">Create a website easily in php
+### [www.webplugin.tk](https://webplugin.tk?utm_src=github-readme)
 
----
-
-[![version](http://webplugin.tk/cdn/v/0.0.4.svg)](http://webplugin.tk/changelogs/v0.0.4) &emsp; [![language](http://webplugin.tk/cdn/badges/language-php.svg)](http://php.net) &emsp; [![open source](http://webplugin.tk/cdn/badges/open-source.svg)](http://webplugin.tk)  &emsp; [![try now](http://webplugin.tk/cdn/badges/try-now.svg)](http://webplugin.tk/getstarted)
+[![version](https://webplugin.tk/cdn/v/0.0.7.svg)](https://webplugin.tk/changelogs/v0.0.7) &emsp; [![language](https://webplugin.tk/cdn/badges/language-php.svg)](https://php.net) &emsp; [![open source](https://webplugin.tk/cdn/badges/open-source.svg)](https://webplugin.tk)  &emsp; [![try now](https://webplugin.tk/cdn/badges/try-now.svg)](https://webplugin.tk/getstarted)
 
 # About
 
 WebPlug is a plugin that allows you to code a simple website in the php language.
 
-> - Simple
-> - Configurable
-> - Fast
-> - Optimized
+- Simple
+- Configurable
+- Fast
+- Optimized
 
 # Installation
 
 **Php 7.4.21 or newer is required.**
 
-Download the zip file [here](https://webplugin.tk/download) and extract the files. Put it at the root and include the file WebPlug.php (`include("WebPlug.php");`) in your website's file.
-
+Download the zip file [here](https://webplugin.tk/download) and extract the files. Put it at the root and include the file WebPlug.php (`require_once("webplug-v0.0.7/src/WebPlug.php");`) in your website's file.
 
 # Example usage
 
 Create and set up the site
 
-`website.php`
+`yoursitefile.php`
 ```php
 <?php
-include("webplug-v0.0.4/WebPlug.php");
+require_once("webplug-v0.0.7/src/WebPlug.php");
 
 $d = __DIR__.DIRECTORY_SEPARATOR;
 
 $p = new WebPlug(array(
     "settings" => array(
-        "name" => "WebPlug",
+        "name" => "WebPlug",// required
         "debug" => true,
+        "lang" => "en", // default: en (en, fr)
         "scripts" => array("js/script.js"),
         "icon" => "assets/icon.png",
-        "stylesheets" => array("css/style.css")
+        "styles" => array("css/style.css"),
+        "admin" => array( // required
+			"username" => "admin",
+			"password" => "admin123"
+		)
     ),
     "pages" => array(
         0 => array(
-            "name" => "{site.name} | Home",
-            "link" => "",
-            "file" => $d."index.php",
+            "name" => "{site.name} | Home",// required
+            "link" => "/",// required
+            "file" => $d."index.php",// required
             "scripts" => array("js/jquery.js")
         ),
         1 => array(
-            "name" => "{site.name} | Page",
-            "link" => "page",
-            "file" => $d."page.php",
-            "stylesheets" => array("css/fonts.css"),
+            "name" => "{site.name} | Page",// required
+            "link" => "page",// required
+            "file" => $d."page.php",// required
+            "styles" => array("css/fonts.css"),
         ),
     ),
+    "errors" => array(
+		"404" => array("file" => $d."errors/404.php")
+	),
 ));
 ?>
 ```
+> **Note**: For the first launch, go to https://website.com/yoursitefile.php to debug the site
 
-`index.php` (yourwebsite.com)
+
+`index.php` (website.com)
 ```php
 <?php
-include("website.php"); 
-$p->load(0);
-$p->write("{page.name}");
+require_once("yoursitefile.php"); 
+PAGE->write("{page.name}");
 ?>
 <h1>Index</h1>
 ```
 
-`page.php` (yourwebsite.com/page)
+`page.php` (website.com/page)
 ```php
 <?php
-include("website.php"); 
-$p->load(1);
+require_once("yoursitefile.php"); 
 ?>
 <h1>Page</h1>
 ```
 
+> **Note**: To manage your site via the dashboard included on your site, go to https://website.com/admin/dash/board
+
 # Links
 > - [Website](https://webplugin.tk)
-> - [Documentation](https://webplugin.tk/en/docs)
+> - [Documentation](https://docs.webplugin.tk)
 > - [Download](https://webplugin.tk/download)
 > - [Discord](https://webplugin.tk/discord)
 
