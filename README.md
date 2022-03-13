@@ -1,5 +1,5 @@
 <a href="https://webplugin.tk"><img src="https://webplugin.tk/cdn/banner.png"></a>
-# <img src="https://webplugin.tk/cdn/logo.png" width="7%" style="vertical-align: middle;">Create a website easily in php
+# Create a website easily in php
 ### [www.webplugin.tk](https://webplugin.tk?utm_src=github-readme)
 
 [![version](https://webplugin.tk/cdn/v/0.0.7.svg)](https://webplugin.tk/changelogs/v0.0.7) &emsp; [![language](https://webplugin.tk/cdn/badges/language-php.svg)](https://php.net) &emsp; [![open source](https://webplugin.tk/cdn/badges/open-source.svg)](https://webplugin.tk)  &emsp; [![try now](https://webplugin.tk/cdn/badges/try-now.svg)](https://webplugin.tk/getstarted)
