@@ -1,8 +1,9 @@
-<a href="https://webplugin.tk"><img src="https://webplugin.tk/cdn/banner.png"></a>
-# Create a website easily in php
-### [www.webplugin.tk](https://webplugin.tk?utm_src=github-readme)
+<img src="https://i.ibb.co/wydzx2m/banner.png">
 
-[![version](https://webplugin.tk/cdn/v/0.0.7.svg)](https://webplugin.tk/changelogs/v0.0.7) &emsp; [![language](https://webplugin.tk/cdn/badges/language-php.svg)](https://php.net) &emsp; [![open source](https://webplugin.tk/cdn/badges/open-source.svg)](https://webplugin.tk)  &emsp; [![try now](https://webplugin.tk/cdn/badges/try-now.svg)](https://webplugin.tk/getstarted)
+# Create a website easily in php
+# :warning: Site unavailable :warning:
+
+Version : 0.0.7
 
 # About
 
@@ -17,7 +18,7 @@ WebPlug is a plugin that allows you to code a simple website in the php language
 
 **Php 7.4.21 or newer is required.**
 
-Download the zip file [here](https://webplugin.tk/download) and extract the files. Put it at the root and include the file WebPlug.php (`require_once("webplug-v0.0.7/src/WebPlug.php");`) in your website's file.
+Download the zip file [here](https://github.com/liam-gen/WebPlug/releases/tag/%40webplug%2Fv0.0.7) and extract the files. Put it at the root and include the file WebPlug.php (`require_once("webplug-v0.0.7/src/WebPlug.php");`) in your website's file.
 
 # Example usage
 
@@ -86,14 +87,13 @@ require_once("yoursitefile.php");
 > **Note**: To manage your site via the dashboard included on your site, go to https://website.com/admin/dash/board
 
 # Links
-> - [Website](https://webplugin.tk)
-> - [Documentation](https://docs.webplugin.tk)
-> - [Download](https://webplugin.tk/download)
-> - [Discord](https://webplugin.tk/discord)
+> - Website [Unavailable]
+> - [Documentation](https://liam-gen.gitbook.io/webplugin-docs/)
+> - [Download](https://github.com/liam-gen/WebPlug/releases/tag/%40webplug%2Fv0.0.7)
 
 # Collaborators
 
-[![liamgen.js#1315](http://webplugin.tk/cdn/user/liamgenjs.png)](http://webplugin.tk/u/liamgenjs)
+[![liamgen.js#1315](https://i.ibb.co/jRNTmq1/avatar.png)]
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details
